@@ -21,7 +21,7 @@ export function navBar(token, setToken) {
             <Link to="/">
                 Home
             </Link>
-            <Link to="ranking">
+            <Link to="/ranking">
                 Ranking
             </Link>
             <Link to="/" onClick={() => loggOut(setToken)}>
@@ -33,8 +33,8 @@ export function navBar(token, setToken) {
         <Link to="/signIn">
             Entrar
         </Link>
-        <Link to="signUp">
-            Cadastrar-se
+        <Link to="/signUp">
+            <p>Cadastrar-se</p>
         </Link>
     </div>
 }

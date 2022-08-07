@@ -56,10 +56,14 @@ const Container = styled.div`
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
         margin-top: 5.6vh;
-        padding: 1.8vh 8.8vw 2.9vh 2.7vw;
+        padding: 1.8vh 8.8vw 2.9vh 5vw;
         line-height: 2.68vh;
         font-size: 2.14vh;
         color: var(--black);
         font-weight: 500;
+        list-style-type: decimal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 `

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Logo from "../../assets/Logo.png";
@@ -10,14 +11,17 @@ export default function Header() {
 
     const renderWelcomeUser = welcomeUser(token, setToken);
     const renderNavBar = navBar(token, setToken);
+    const pColor = token ? "#9C9C9C" : "#5D9040";
 
     return (
-        <Container>
+        <Container pCor={pColor}>
             <div>
                 {renderWelcomeUser}
                 {renderNavBar}
             </div> 
-            <img src={Logo} alt="logo" />
+            <Link to="/">
+                <img src={Logo} alt="logo" />
+            </Link>
         </Container>
     )
 }
@@ -64,6 +68,10 @@ const Container = styled.div`
 
         span {
             color: var(--green);
+        }
+
+        p {
+            color: ${props => props.pCor}
         }
     }
 `
