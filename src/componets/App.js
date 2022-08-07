@@ -3,11 +3,13 @@ import { useState } from "react";
 
 import userContext from "../contexts/userContext.js";
 import Home from "./home/Home.js";
-import Footer from "./shared/Footer.js";
 import Header from "./shared/Header.js";
+import SignIn from "./SignIn.js";
+import SignUp from "./SignUp.js";
+import Ranking from "./Ranking.js";
 
 export default function App() {
-    const [token, setToken] = useState();
+    const [token, setToken] = useState("");
 
     return (
         <userContext.Provider value={{token, setToken}}>
@@ -15,9 +17,11 @@ export default function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/signUp" element={<SignUp />} />
+                <Route path="/signIn" element={<SignIn />} />
+                <Route path="/ranking" element={<Ranking />} />
             </Routes>
-            <Footer />
             </BrowserRouter>
         </userContext.Provider>
-    )
+    );
 }

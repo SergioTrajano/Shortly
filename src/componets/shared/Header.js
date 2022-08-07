@@ -32,6 +32,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
 
     img {
         height: 9.9vh;
@@ -54,6 +55,7 @@ const Container = styled.div`
             display: flex;
             justify-content: space-between;
             justify-self: flex-end;
+            margin-bottom: 2.7vh;
 
             a {
                 margin-left: 1.7vw;
