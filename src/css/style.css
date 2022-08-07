@@ -1,0 +1,11 @@
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #9C9C9C;
+    --green: #5D9040;
+    --lightgreen: #80CC74;
+    --red: #EA4F4F;
+}
+
