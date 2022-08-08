@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 import userContext from "../../contexts/userContext";
 import Ranking from "../Ranking.js";
+import LoggedHome from "./LoggedHome.js";
 
 export default function Home() {
     const { token } = useContext(userContext);
-    const render = token ? <h1>To loggado</h1> : <Ranking />;
+    const render = token ? <LoggedHome /> : <Ranking />;
     const footer = token ? <></> : <h1>Crie sua conta para usar nosso serviço!</h1>;
 
     return (

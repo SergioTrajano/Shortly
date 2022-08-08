@@ -35,22 +35,22 @@ export default function SignIn() {
     return (
         <Container onSubmit={submit}>
             <input 
-                    placeholder='Email'
-                    type={'text'}
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    disabled={disableClick}
-                    required
-                />
-                <input 
-                    placeholder='Senha'
-                    type={'password'}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    disabled={disableClick}
-                    required
-                />
-                <button type={"submit"} disabled={disableClick} >Entrar</button>
+                placeholder='Email'
+                type={'text'}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={disableClick}
+                required
+            />
+            <input 
+                placeholder='Senha'
+                type={'password'}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                disabled={disableClick}
+                required
+            />
+            <button type={"submit"} disabled={disableClick} >Entrar</button>
         </Container>
     );
 }

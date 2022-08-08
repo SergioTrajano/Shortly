@@ -37,6 +37,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     font-family: 'Lexend Deca', sans-serif;
+    z-index: 1;
 
     img {
         height: 9.9vh;
