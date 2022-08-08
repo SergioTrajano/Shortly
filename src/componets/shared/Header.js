@@ -9,7 +9,7 @@ import { welcomeUser, navBar } from "./headerComponents";
 export default function Header() {
     const { token, setToken } = useContext(userContext);
 
-    const renderWelcomeUser = welcomeUser(token, setToken);
+    const renderWelcomeUser = welcomeUser(token);
     const renderNavBar = navBar(token, setToken);
     const pColor = token ? "#9C9C9C" : "#5D9040";
 

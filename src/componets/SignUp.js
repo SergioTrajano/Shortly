@@ -34,7 +34,7 @@ export default function SignUp() {
             password,
             confirmPassword,
         }
-        const promise = axios.post("https://sergio-shortly.herokuapp.com/signUp", body);
+        const promise = axios.post(`https://sergio-shortly.herokuapp.com/signUp`, body);
         promise.then(() => {
             alert("Cadastro realizado com sucesso. Faça login!");
             navigate("/signIn");

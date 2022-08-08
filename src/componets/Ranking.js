@@ -9,9 +9,8 @@ export default function Ranking() {
     const [ranking, setRanking] = useState([]);
     
     useEffect(() => {
-        const promise = axios.get("https://sergio-shortly.herokuapp.com/ranking");
+        const promise = axios.get(`https://sergio-shortly.herokuapp.com/ranking`);
         promise.then(response => {
-            console.log(response.data)
             setRanking(response.data.slice(0, 5));
         });
     }, []);

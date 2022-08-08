@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function welcomeUser(token, setToken) {
+export function welcomeUser(token) {
     if (token) {
         return <div>
             <span>Seja bem-vindo(a), {token.name}! </span>
