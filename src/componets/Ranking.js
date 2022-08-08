@@ -13,7 +13,7 @@ export default function Ranking() {
         promise.then(response => {
             setRanking(response.data.slice(0, 5));
         });
-    }, []);
+    }, [ranking]);
 
     return (
         <Container>
